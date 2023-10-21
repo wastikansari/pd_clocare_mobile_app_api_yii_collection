@@ -1,0 +1,436 @@
+{
+	"info": {
+		"_postman_id": "c316fb87-7800-434e-8ae1-5271dc7c4253",
+		"name": "Clocare Dashboard Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23237330"
+	},
+	"item": [
+		{
+			"name": "package",
+			"item": [
+				{
+					"name": "add_package",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTE3ZmY1NGJhZTJkNjM2NzZmZTBjMjMiLCJpYXQiOjE2OTYwNzE1MDgsImV4cCI6MTcyNzYyOTEwOH0.H3-L5I2lhTAKAj6shepa2Dg4d_aeQ_OkyChaf8M_OCs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "package_name",
+									"value": "Ironing",
+									"type": "text"
+								},
+								{
+									"key": "package_code",
+									"value": "IR500",
+									"type": "text"
+								},
+								{
+									"key": "prices",
+									"value": "3250",
+									"type": "text"
+								},
+								{
+									"key": "valid",
+									"value": "month",
+									"type": "text"
+								},
+								{
+									"key": "free_pickup",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "free_delivery",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "routine_garments",
+									"value": "523",
+									"type": "text"
+								},
+								{
+									"key": "ironing",
+									"value": "500",
+									"type": "text"
+								},
+								{
+									"key": "steam_ironing",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "wash_ironing",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "dry_cleaning",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "termConditions",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_api}}/api/dashboard/package/add",
+							"host": [
+								"{{clocare_api}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"package",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "package_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{clocare_api}}/api/dashboard/package/list",
+							"host": [
+								"{{clocare_api}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"package",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_package",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTE3ZmY1NGJhZTJkNjM2NzZmZTBjMjMiLCJpYXQiOjE2OTYwNzE1MDgsImV4cCI6MTcyNzYyOTEwOH0.H3-L5I2lhTAKAj6shepa2Dg4d_aeQ_OkyChaf8M_OCs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "package_name",
+									"value": "Dry Cleaning",
+									"type": "text"
+								},
+								{
+									"key": "package_code",
+									"value": "DC20",
+									"type": "text"
+								},
+								{
+									"key": "prices",
+									"value": "1575",
+									"type": "text"
+								},
+								{
+									"key": "valid",
+									"value": "month",
+									"type": "text"
+								},
+								{
+									"key": "free_pickup",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "free_delivery",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "routine_garments",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "ironing",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "steam_ironing",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "wash_ironing",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "dry_cleaning",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "termConditions",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_api}}/api/dashboard/package/update/651ac4bb6cdf1ccddad297ed",
+							"host": [
+								"{{clocare_api}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"package",
+								"update",
+								"651ac4bb6cdf1ccddad297ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_package",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTE3ZmY1NGJhZTJkNjM2NzZmZTBjMjMiLCJpYXQiOjE2OTYwNzE1MDgsImV4cCI6MTcyNzYyOTEwOH0.H3-L5I2lhTAKAj6shepa2Dg4d_aeQ_OkyChaf8M_OCs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{clocare_api}}/api/dashboard/package/delete/651ac595586cbe1501d35a39",
+							"host": [
+								"{{clocare_api}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"package",
+								"delete",
+								"651ac595586cbe1501d35a39"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "staff",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "registration",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "rahul",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "8327724961",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/dashboard/staff/register",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"dashboard",
+										"staff",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "8327724967",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/dashboard/staff/login",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"dashboard",
+										"staff",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "order_update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{clocare_api}}/api/customer/order/create",
+							"host": [
+								"{{clocare_api}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"order",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{clocare_api}}/api/customer/order/create",
+							"host": [
+								"{{clocare_api}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"order",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{clocare_api}}/api/customer/order/create",
+							"host": [
+								"{{clocare_api}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"order",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{clocare_api}}/api/customer/order/create",
+							"host": [
+								"{{clocare_api}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"order",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

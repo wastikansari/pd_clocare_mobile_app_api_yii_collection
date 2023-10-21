@@ -1,0 +1,3503 @@
+{
+	"info": {
+		"_postman_id": "67b01276-c584-45ea-ab51-98ebfb262312",
+		"name": "Clocare Delivery Boy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23237330"
+	},
+	"item": [
+		{
+			"name": "Authendication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "8327724967",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "6351979109    123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "8327724967 .... wastik",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/staff/login",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"staff",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Wastik",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "ansari",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "8327724912",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/staff/register",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"staff",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mobile number check",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "number",
+									"value": "8327724967",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "786206004",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/staff/check-mobile",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"staff",
+								"check-mobile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "otp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "83277249607",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "091977",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/staff/resendotp",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"staff",
+								"resendotp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "order_info_by_barcode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/staff/profile",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"staff",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order_detail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "z3L4eHN0sY5pW9GsrbTPODM1ODgzMDM3MWRiZWViYzE3MWZkZjAwYjMxOTMxNzZkZTQwZjk5NDdkMzI1MWRkYzQ2MmMyNDRjZmQzZTFjOGJ80w0pyod8UHAD5+4G3oX1AhOvYHR72II8iRyPPCZ45V8E1qjPwkq6QLhCUWELSNYhnWeWA/k2wXynIj4zkjy8",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "72895",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "72803",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/orders/orderdetail",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"orders",
+								"orderdetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order_filter",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/orders/order-filter",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"orders",
+								"order-filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order_type",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "13793",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/general/ordertypes",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"ordertypes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pending",
+			"item": [
+				{
+					"name": "delivery",
+					"item": [
+						{
+							"name": "pending_deliveries_list",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "staff_token",
+											"value": "Cg2IS5UC49jNo0DPQvv89mU0NzY2YmUxNzAyNjA1YTRhOWNiOWJiOTIwOTBhMDU5ZjJjZDAxZGNkMzE1N2ZiMjczNThhNTljYWViZjk3MjNV6gfhyiaend+bBrLDz7/+6aOdu9AM5MD29yQAbQOa6cmuCxNocWhy509VvmbKrTLqbbhcIGW5Udlq9tIhhXla",
+											"type": "text"
+										},
+										{
+											"key": "page",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "2",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/delivery/list",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"delivery",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "new_deliverie_order_list",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "staff_token",
+											"value": "Cg2IS5UC49jNo0DPQvv89mU0NzY2YmUxNzAyNjA1YTRhOWNiOWJiOTIwOTBhMDU5ZjJjZDAxZGNkMzE1N2ZiMjczNThhNTljYWViZjk3MjNV6gfhyiaend+bBrLDz7/+6aOdu9AM5MD29yQAbQOa6cmuCxNocWhy509VvmbKrTLqbbhcIGW5Udlq9tIhhXla",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/orders/orderlist",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"orders",
+										"orderlist"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delivery_start",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "staff_token",
+											"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "71980",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/delivery/delivery-started",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"delivery",
+										"delivery-started"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delivery_done",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "staff_token",
+											"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "72598",
+											"type": "text"
+										},
+										{
+											"key": "orderstage_id",
+											"value": "202165",
+											"type": "text"
+										},
+										{
+											"key": "orderItems",
+											"value": "12",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "customer_sign",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "stage_comments",
+											"value": "fdgdfg",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/delivery/delivered",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"delivery",
+										"delivered"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "pickup",
+					"item": [
+						{
+							"name": "pending_pickups_list",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "staff_token",
+											"value": "z3L4eHN0sY5pW9GsrbTPODM1ODgzMDM3MWRiZWViYzE3MWZkZjAwYjMxOTMxNzZkZTQwZjk5NDdkMzI1MWRkYzQ2MmMyNDRjZmQzZTFjOGJ80w0pyod8UHAD5+4G3oX1AhOvYHR72II8iRyPPCZ45V8E1qjPwkq6QLhCUWELSNYhnWeWA/k2wXynIj4zkjy8",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/pickup/list",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"pickup",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pickup_start",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "staff_token",
+											"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "72903",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/pickup/pickup-started",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"pickup",
+										"pickup-started"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "new_pending_pickup_list",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "staff_token",
+											"value": "z3L4eHN0sY5pW9GsrbTPODM1ODgzMDM3MWRiZWViYzE3MWZkZjAwYjMxOTMxNzZkZTQwZjk5NDdkMzI1MWRkYzQ2MmMyNDRjZmQzZTFjOGJ80w0pyod8UHAD5+4G3oX1AhOvYHR72II8iRyPPCZ45V8E1qjPwkq6QLhCUWELSNYhnWeWA/k2wXynIj4zkjy8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/orders/pickuporderlist",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"orders",
+										"pickuporderlist"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pickup_order",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "staff_token",
+											"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "'72945'",
+											"type": "text"
+										},
+										{
+											"key": "orderstage_id",
+											"value": "202846",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "OrderItems",
+											"value": "[\n       {\n          \"gtype_id\":107,\n          \"price_id\":0,\n          \"rcvd_qty\":1,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":108,\n          \"price_id\":0,\n          \"rcvd_qty\":1,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":109,\n          \"price_id\":0,\n          \"rcvd_qty\":1,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":110,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"50.00\"\n       },\n       {\n          \"gtype_id\":111,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"65.00\"\n       },\n       {\n          \"gtype_id\":112,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"40.00\"\n       },\n       {\n          \"gtype_id\":113,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":114,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":219,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"30.00\"\n       },\n       {\n          \"gtype_id\":220,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":221,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"25.00\"\n       },\n       {\n          \"gtype_id\":284,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"20.00\"\n       },\n       {\n          \"gtype_id\":326,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"8.00\"\n       },\n       {\n          \"gtype_id\":330,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"18.00\"\n       },\n       {\n          \"gtype_id\":361,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":115,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":116,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":117,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"18.00\"\n       },\n       {\n          \"gtype_id\":118,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":119,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"8.00\"\n       },\n       {\n          \"gtype_id\":120,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":121,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"8.00\"\n       },\n       {\n          \"gtype_id\":222,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"20.00\"\n       },\n       {\n          \"gtype_id\":223,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"20.00\"\n       },\n       {\n          \"gtype_id\":224,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"40.00\"\n       },\n       {\n          \"gtype_id\":225,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"30.00\"\n       },\n       {\n          \"gtype_id\":337,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":338,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":339,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"8.00\"\n       },\n       {\n          \"gtype_id\":343,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"12.00\"\n       },\n       {\n          \"gtype_id\":344,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":345,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":346,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":351,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"20.00\"\n       },\n       {\n          \"gtype_id\":368,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"30.00\"\n       },\n       {\n          \"gtype_id\":122,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"20.00\"\n       },\n       {\n          \"gtype_id\":123,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"30.00\"\n       },\n       {\n          \"gtype_id\":170,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"8.00\"\n       },\n       {\n          \"gtype_id\":178,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"20.00\"\n       },\n       {\n          \"gtype_id\":187,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"30.00\"\n       },\n       {\n          \"gtype_id\":188,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"200.00\"\n       },\n       {\n          \"gtype_id\":216,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"50.00\"\n       },\n       {\n          \"gtype_id\":217,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"8.00\"\n       },\n       {\n          \"gtype_id\":218,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"6.00\"\n       },\n       {\n          \"gtype_id\":228,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"300.00\"\n       },\n       {\n          \"gtype_id\":292,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"5.00\"\n       },\n       {\n          \"gtype_id\":297,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"30.00\"\n       },\n       {\n          \"gtype_id\":328,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"12.00\"\n       },\n       {\n          \"gtype_id\":355,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":356,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"15.00\"\n       },\n       {\n          \"gtype_id\":358,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"5.00\"\n       },\n       {\n          \"gtype_id\":363,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"30.00\"\n       },\n       {\n          \"gtype_id\":364,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"45.00\"\n       },\n       {\n          \"gtype_id\":396,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"30.00\"\n       },\n       {\n          \"gtype_id\":397,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"50.00\"\n       },\n       {\n          \"gtype_id\":398,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"80.00\"\n       },\n       {\n          \"gtype_id\":404,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"30.00\"\n       },\n       {\n          \"gtype_id\":300,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":301,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":302,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"20.00\"\n       },\n       {\n          \"gtype_id\":309,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":310,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":311,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":312,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":313,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":314,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":315,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       },\n       {\n          \"gtype_id\":316,\n          \"price_id\":0,\n          \"rcvd_qty\":null,\n          \"base_price\":\"10.00\"\n       }\n    ]",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "Orders",
+											"value": "{\n            \"order_id\": 72945,\n            \"order_display_id\": \"ORD974172945\",\n            \"customer_id\": 13793,\n            \"service_id\": 12,\n            \"pickup_date\": \"2023-08-07\",\n            \"pickup_slot_id\": 63,\n            \"pref_pickup_time\": null,\n            \"delivery_date\": \"2023-08-08\",\n            \"delivery_slot_id\": 63,\n            \"pref_delivery_time\": null,\n            \"ordertype_id\": 12,\n            \"order_total\": \"0.00\",\n            \"order_sub_total\": \"0.00\",\n            \"order_amount\": \"0.00\",\n            \"order_taxes\": \"0.00\",\n            \"order_outstanding_amount\": \"0.00\",\n            \"total_items\": 15,\n            \"total_rcvd_items\": 0,\n            \"total_dlvrd_items\": 0,\n            \"comments\": \"\\n                                                \",\n            \"pickupaddress_id\": 12331,\n            \"deliveryaddress_id\": 12331,\n            \"same_as\": \"1\",\n            \"pickup_flat_no\": \"123\",\n            \"pickup_street\": \"fategahgunj\",\n            \"pickup_landmark\": \"fategahgunj\",\n            \"pickup_state_id\": 9,\n            \"pickup_city_id\": 7,\n            \"pickup_pincode_id\": 41,\n            \"pickup_lat\": null,\n            \"pickup_lng\": null,\n            \"delivery_flat_no\": \"123\",\n            \"delivery_street\": \"fategahgunj\",\n            \"delivery_landmark\": \"fategahgunj\",\n            \"delivery_state_id\": 9,\n            \"delivery_city_id\": 7,\n            \"delivery_pincode_id\": 41,\n            \"delivery_lat\": null,\n            \"delivery_lng\": null,\n            \"order_booked_by\": 13864,\n            \"at_place\": null,\n            \"status\": \"Unpaid\",\n            \"cancelled\": 0,\n            \"cancellation_reason\": null,\n            \"cancelled_on\": null,\n            \"cancelled_by\": \"\",\n            \"cancelled_by_id\": 0,\n            \"initial_assigned_to\": 263,\n            \"delivery_assigned_to\": 0,\n            \"extra_pay\": 0,\n            \"extra_paid_amount\": 0,\n            \"extra_paid_on\": \"0000-00-00 00:00:00\",\n            \"extra_paid_by\": 0,\n            \"is_feedback_rcvd\": 0,\n            \"is_marked_as_auto_feedback\": 0,\n            \"feedback_rcvd_on\": null,\n            \"is_pickedup\": 0,\n            \"is_processed\": 0,\n            \"is_delivered\": 0,\n            \"is_collected_in_person\": 0,\n            \"is_auto_routed\": 0,\n            \"is_refunded\": 0,\n            \"refunded_amount\": \"0.00\",\n            \"refunded_on\": null,\n            \"refunded_by\": null,\n            \"refund_comment\": null,\n            \"submit_to\": null,\n            \"submitted_by\": null,\n            \"is_submitted\": null,\n            \"submitted_on\": null,\n            \"is_repeated\": 0,\n            \"rate_multiplier\": \"2.50\",\n            \"is_paid_to_vendor\": 0,\n            \"is_payable_calculated\": 0,\n            \"delivery_attempts\": 0,\n            \"pickup_attempts\": 0,\n            \"is_invoice_generated\": 0,\n            \"invoice_num\": null,\n            \"invoice_file\": null,\n            \"invoiced_on\": null,\n            \"additional_charges\": \"25.00\",\n            \"is_proforma_invoice_generated\": 0,\n            \"proforma_invoice_num\": null,\n            \"proforma_invoice_file\": null,\n            \"proforma_invoiced_on\": null,\n            \"origin_source\": \"APP\",\n            \"order_booked_by_staff\": null,\n            \"payment_method\": null,\n            \"ref_discount\": \"0.00\",\n            \"ref_discount_msg\": null,\n            \"is_bill_generated\": 0,\n            \"feedback_followup_request_status\": null,\n            \"schedule_date\": null,\n            \"mode_of_payment\": null,\n            \"closed_on\": null,\n            \"corporate_id\": null,\n            \"corporate_location_id\": null,\n            \"corporate_unit_id\": null,\n            \"is_generated_by_scheduler\": 0,\n            \"monthly_subscription\": 0,\n            \"parent_order_id\": 0,\n            \"additional_discount\": \"0.00\",\n            \"additional_discount_type\": null,\n            \"additional_discount_amount\": \"0.00\",\n            \"special_discount\": 0,\n            \"additional_cb\": \"0.00\",\n            \"additional_cb_type\": null,\n            \"additional_cb_amount\": \"0.00\",\n            \"special_discount_type\": null,\n            \"special_discount_amount\": \"0.00\",\n            \"special_comment\": \"\",\n            \"is_donation\": 0,\n            \"pref_pickup_time_charge\": \"0.00\",\n            \"pref_delivery_time_charge\": \"0.00\",\n            \"has_pref_pickup_time\": 0,\n            \"has_pref_delivery_time\": 0,\n            \"needs_verification\": 2,\n            \"verified_by\": 34,\n            \"verified_on\": \"2023-08-07 17:27:36\",\n            \"verified_by_responsible_person\": 34,\n            \"is_lf\": 0,\n            \"is_quickly_pickedup\": 0,\n            \"created_on\": \"2023-08-07 17:24:47\",\n            \"last_modified_on\": \"2023-08-07 17:32:47\",\n            \"additional_cb_redeemed\": null,\n            \"additional_cb_redeemed_on\": null,\n            \"additional_cb_redeemed_for\": null,\n            \"order_taxable_amount\": \"0.00\",\n            \"related_center_id\": 1,\n            \"is_returned_order\": 0,\n            \"return_order_id\": null,\n            \"total_returned_count\": 0,\n            \"delivery_pack_id\": null,\n            \"delivery_pack_price\": \"0.00\",\n            \"delivery_pack_extra_included\": 0,\n            \"is_regular\": 1,\n            \"is_senior_citizens\": 0,\n            \"is_covid_patients\": 0,\n            \"covid_patient_amount\": \"0.00\",\n            \"is_covid_centers\": 0,\n            \"cancellation_charges\": \"0.00\",\n            \"cancellation_charges_pay\": 0,\n            \"reschedule_charges\": \"0.00\",\n            \"hold_amount\": 0,\n            \"pay_on_pickup\": 0,\n            \"delivery_charges\": \"0.00\",\n            \"order_stages\": [\n                {\n                    \"stage_order\": 1,\n                    \"orderstage_id\": 202846,\n                    \"stage_title\": \"Pickup\",\n                    \"stage_status\": \"Pending\",\n                    \"assigned_to_id\": 263,\n                    \"assigned_to\": \"wastik ansari (8327724967)\",\n                    \"staged_by\": \"\",\n                    \"stage_comments\": null,\n                    \"staged_on\": \"2023-08-07 17:24:47\",\n                    \"staged_laston\": \"2023-08-07 17:32:47\",\n                    \"customer_feedback_rating\": 0,\n                    \"customer_feedback_comment\": \"\",\n                    \"customer_feedback_received_on\": null,\n                    \"stage_by_sep_name\": \"\",\n                    \"stage_by_sep_phone\": \"\"\n                },\n                {\n                    \"stage_order\": 2,\n                    \"stage_title\": \"Processing\",\n                    \"stage_status\": \"\",\n                    \"assigned_to_id\": \"\",\n                    \"assigned_to\": \"\",\n                    \"staged_by\": \"\",\n                    \"stage_comment\": \"\",\n                    \"staged_on\": \"\",\n                    \"staged_laston\": \"\",\n                    \"orderstage_id\": 0,\n                    \"customer_feedback_rating\": \"\",\n                    \"customer_feedback_comment\": \"\",\n                    \"customer_feedback_received_on\": \"\",\n                    \"stage_by_sep_name\": \"\",\n                    \"stage_by_sep_phone\": \"\"\n                },\n                {\n                    \"stage_order\": 3,\n                    \"stage_title\": \"Delivery\",\n                    \"stage_status\": \"\",\n                    \"assigned_to_id\": \"\",\n                    \"assigned_to\": \"\",\n                    \"staged_by\": \"\",\n                    \"stage_comment\": \"\",\n                    \"staged_on\": \"\",\n                    \"staged_laston\": \"\",\n                    \"orderstage_id\": 0,\n                    \"customer_feedback_rating\": \"\",\n                    \"customer_feedback_comment\": \"\",\n                    \"customer_feedback_received_on\": \"\",\n                    \"stage_by_sep_name\": \"\",\n                    \"stage_by_sep_phone\": \"\"\n                }\n            ],\n            \"isPickedUp\": false,\n            \"isProcessed\": false,\n            \"isDelivered\": false,\n            \"service\": {\n                \"name\": \"Wash\",\n                \"banner\": \"1615037586_service_banner.jpg\"\n            },\n            \"orderType\": {\n                \"type_name\": \"Express Service\",\n                \"allow_user_to_choose_garments\": 0,\n                \"min_ord_val\": \"30.00\",\n                \"is_instant\": 1\n            },\n            \"orderBookedBy\": {\n                \"mobile\": \"8327724967\",\n                \"name\": \"Test Tewt\",\n                \"id\": 13864,\n                \"push_id\": \"fed3-x3ESBKILK1sxfHwuA:APA91bE-NKo52A4pYdpzA-f1JJ_5FAWooLgXxCqA24HHJZu557_t9Rv5KWXferFdQxJJDQLb_H6Q0gqZVl5OqcRYx99w1QS0RUxsm1vwGKq-ocRqujUgD5oJmPbmGw3ujxNg2BeX1gia\"\n            },\n            \"pickupPincodes\": {\n                \"area_name\": \"Chhani road\",\n                \"pincode\": \"390002\"\n            },\n            \"pickupCities\": {\n                \"city_name\": \"Vadodara\"\n            },\n            \"pickupStates\": {\n                \"state_name\": \"Gujarat\"\n            },\n            \"timeSlot\": {\n                \"starts_on\": 1691404200,\n                \"ends_on\": 1691415000\n            },\n            \"formatted_pickup_address\": \"123, fategahgunj,fategahgunj,Chhani road,Vadodara-390002,Gujarat\",\n            \"deliveryPincodes\": {\n                \"area_name\": \"Chhani road\",\n                \"pincode\": \"390002\"\n            },\n            \"deliveryCities\": {\n                \"city_name\": \"Vadodara\"\n            },\n            \"deliveryStates\": {\n                \"state_name\": \"Gujarat\"\n            },\n            \"deliveryTimeSlot\": {\n                \"starts_on\": 1691404200,\n                \"ends_on\": 1691415000\n            },\n            \"formatted_delivery_address\": \"123, fategahgunj,fategahgunj,Chhani road,Vadodara-390002,Gujarat\",\n            \"taxes\": [],\n            \"offer\": null,\n            \"orderWiseStages\": [\n                {\n                    \"orderstage_id\": 202846,\n                    \"order_id\": 72945,\n                    \"stage_id\": 29,\n                    \"stage_status\": 10,\n                    \"stage_comments\": null,\n                    \"staged_by\": null,\n                    \"barcode\": null,\n                    \"next_stage_id\": null,\n                    \"last_modified_on\": \"2023-08-07 17:32:47\",\n                    \"created_on\": \"2023-08-07 17:24:47\",\n                    \"title\": \"Pickup\",\n                    \"display_order\": 1\n                }\n            ],\n            \"PickupPersonInfo\": {\n                \"person_id\": 0,\n                \"person\": \"\",\n                \"number\": \"\",\n                \"away\": \"\",\n                \"lat\": \"\",\n                \"lon\": \"\"\n            },\n            \"orderItems\": []\n        }",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "bagInfo",
+											"value": "[\n       {\n          \"bagno\":\"1\"\n       }\n    ],",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "total_picked_items",
+											"value": "3",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "total_items",
+											"value": "3",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "stage_comments",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "mode_of_payment",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "FinalAddedMoney",
+											"value": "0.0",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "referral",
+											"value": "{\n            \"total_used\": null,\n            \"total_earned\": null,\n            \"total_earned_points\": null,\n            \"total_balance\": 0,\n            \"total_balance_text\": \"&#8377;0  <small class=\\\"txtview_14\\\"> (Total 0 points earned)</small>\",\n            \"used\": 0\n        },",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "https://cc.vcantech.biz/pdapi/v1/pickup/picked-up",
+									"protocol": "https",
+									"host": [
+										"cc",
+										"vcantech",
+										"biz"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"pickup",
+										"picked-up"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pre_pickup",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "staff_token",
+											"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+											"type": "text"
+										},
+										{
+											"key": "customer_id",
+											"value": "13793",
+											"type": "text"
+										},
+										{
+											"key": "booked_by",
+											"value": "13864",
+											"type": "text"
+										},
+										{
+											"key": "state_id",
+											"value": "9",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "7",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "72899",
+											"type": "text"
+										},
+										{
+											"key": "pincode_id",
+											"value": "41",
+											"type": "text"
+										},
+										{
+											"key": "booked_by",
+											"value": "13864",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "ordertype",
+											"value": "14",
+											"type": "text"
+										},
+										{
+											"key": "ref_using_amount",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "total_items",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "order_items",
+											"value": "{\n        \"128\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503990372_garmentsubtype_icon.png\",\n            \"name\": \"Formal Shirts\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"rcvd_qty\": 1,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 128\n        },\n        \"129\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503990409_garmentsubtype_icon.png\",\n            \"name\": \"T-shirt\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"rcvd_qty\": 3,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 129\n        },\n        \"130\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503990642_garmentsubtype_icon.png\",\n            \"name\": \"Trouser / Pyjamas\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"rcvd_qty\": 1,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 130\n        },\n        \"131\": {\n            \"default_price\": \"80.00\",\n            \"desc\": \"Set of two pieces - One Blazer and One Trouser\",\n            \"description\": \"Set of two pieces - One Blazer and One Trouser\",\n            \"icon\": \"1503990767_garmentsubtype_icon.png\",\n            \"name\": \"Suit (2 Pieces)\",\n            \"price\": \"80.00\",\n            \"price_id\": 0,\n            \"rcvd_qty\": 1,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 131\n        },\n        \"132\": {\n            \"default_price\": \"120.00\",\n            \"desc\": \"Set of three pieces - One Blazer, One Westcoat and One Trouser\",\n            \"description\": \"Set of three pieces - One Blazer, One Westcoat and One Trouser\",\n            \"icon\": \"1503990873_garmentsubtype_icon.png\",\n            \"name\": \"Suit (3 pieces)\",\n            \"price\": \"120.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 132\n        },\n        \"133\": {\n            \"default_price\": \"60.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503990917_garmentsubtype_icon.png\",\n            \"name\": \"Blazer / Jacket\",\n            \"price\": \"60.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 133\n        },\n        \"134\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503990967_garmentsubtype_icon.png\",\n            \"name\": \"Shorts/Bermuda \",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 134\n        },\n        \"135\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503991001_garmentsubtype_icon.png\",\n            \"name\": \"Kurta/Kameez\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 135\n        },\n        \"283\": {\n            \"default_price\": \"12.00\",\n            \"desc\": \"Two piece - ONLY WASH\",\n            \"description\": \"Two piece - ONLY WASH\",\n            \"icon\": \"1522325355_garmentsubtype_icon.png\",\n            \"name\": \"Socks\",\n            \"price\": \"12.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 283\n        },\n        \"285\": {\n            \"default_price\": \"30.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1522336291_garmentsubtype_icon.png\",\n            \"name\": \"Dhoti\",\n            \"price\": \"30.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 285\n        },\n        \"327\": {\n            \"default_price\": \"12.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1530007560_garmentsubtype_icon.png\",\n            \"name\": \"Cap\",\n            \"price\": \"12.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 327\n        },\n        \"331\": {\n            \"default_price\": \"22.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1530549485_garmentsubtype_icon.png\",\n            \"name\": \"Jeans / Denim\",\n            \"price\": \"22.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 331\n        },\n        \"362\": {\n            \"default_price\": \"25.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1534235829_garmentsubtype_icon.png\",\n            \"name\": \"Lungi\",\n            \"price\": \"25.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 362\n        },\n        \"406\": {\n            \"default_price\": \"28.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1602478999_garmentsubtype_icon.png\",\n            \"name\": \"Boiler Suit\",\n            \"price\": \"28.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 406\n        },\n        \"136\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503991086_garmentsubtype_icon.png\",\n            \"name\": \"Kurti (Normal)\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 136\n        },\n        \"137\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503991126_garmentsubtype_icon.png\",\n            \"name\": \"Kurti (Designer)\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 137\n        },\n        \"138\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503991160_garmentsubtype_icon.png\",\n            \"name\": \"Jeans\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 138\n        },\n        \"139\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503991198_garmentsubtype_icon.png\",\n            \"name\": \"Payzamo / salwar\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 139\n        },\n        \"140\": {\n            \"default_price\": \"12.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503991241_garmentsubtype_icon.png\",\n            \"name\": \"Dupatta\",\n            \"price\": \"12.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 140\n        },\n        \"141\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503991275_garmentsubtype_icon.png\",\n            \"name\": \"Skirt\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 141\n        },\n        \"142\": {\n            \"default_price\": \"12.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503991353_garmentsubtype_icon.png\",\n            \"name\": \"Blouse\",\n            \"price\": \"12.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 142\n        },\n        \"340\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1532332878_garmentsubtype_icon.png\",\n            \"name\": \"Top (Medium) \",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 340\n        },\n        \"341\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1532333003_garmentsubtype_icon.png\",\n            \"name\": \"T-shirt\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 341\n        },\n        \"342\": {\n            \"default_price\": \"12.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"name\": \"Inner Slip\",\n            \"price\": \"12.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 342\n        },\n        \"347\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1532335732_garmentsubtype_icon.png\",\n            \"name\": \"Trouser\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 347\n        },\n        \"348\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1532335778_garmentsubtype_icon.png\",\n            \"name\": \"Short\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 348\n        },\n        \"349\": {\n            \"default_price\": \"20.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1532335838_garmentsubtype_icon.png\",\n            \"name\": \"Shirts\",\n            \"price\": \"20.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 349\n        },\n        \"350\": {\n            \"default_price\": \"12.00\",\n            \"desc\": \"per pair\",\n            \"description\": \"per pair\",\n            \"icon\": \"1532335871_garmentsubtype_icon.png\",\n            \"name\": \"Socks\",\n            \"price\": \"12.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 350\n        },\n        \"352\": {\n            \"default_price\": \"35.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1533552733_garmentsubtype_icon.png\",\n            \"name\": \"Saree Plain\",\n            \"price\": \"35.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 352\n        },\n        \"369\": {\n            \"default_price\": \"40.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1536333644_garmentsubtype_icon.png\",\n            \"name\": \"Bath Gown\",\n            \"price\": \"40.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 369\n        },\n        \"143\": {\n            \"default_price\": \"30.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503994544_garmentsubtype_icon.png\",\n            \"name\": \"Bed sheet Single\",\n            \"price\": \"30.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 143\n        },\n        \"144\": {\n            \"default_price\": \"50.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1503994586_garmentsubtype_icon.png\",\n            \"name\": \"Bed sheet Double\",\n            \"price\": \"50.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 144\n        },\n        \"169\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1504879775_garmentsubtype_icon.png\",\n            \"name\": \"Pillow cover\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 169\n        },\n        \"181\": {\n            \"default_price\": \"25.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1505455426_garmentsubtype_icon.png\",\n            \"name\": \"Towel\",\n            \"price\": \"25.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 181\n        },\n        \"227\": {\n            \"default_price\": \"300.00\",\n            \"desc\": \"per seat\",\n            \"description\": \"per seat\",\n            \"icon\": \"1505906627_garmentsubtype_icon.png\",\n            \"name\": \"Sofa Cover (6 Seater)\",\n            \"price\": \"300.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 227\n        },\n        \"293\": {\n            \"default_price\": \"12.00\",\n            \"desc\": \"Per Piece \",\n            \"description\": \"Per Piece \",\n            \"icon\": \"1524122231_icon.png\",\n            \"name\": \"Hand Napkin\",\n            \"price\": \"12.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 293\n        },\n        \"294\": {\n            \"default_price\": \"10.00\",\n            \"desc\": \"Per Piece \",\n            \"description\": \"Per Piece \",\n            \"icon\": \"1524122315_garmentsubtype_icon.png\",\n            \"name\": \"Hankey\",\n            \"price\": \"10.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 294\n        },\n        \"299\": {\n            \"default_price\": \"25.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1526017296_garmentsubtype_icon.png\",\n            \"name\": \"Doormate\",\n            \"price\": \"25.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 299\n        },\n        \"317\": {\n            \"default_price\": \"30.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528963796_garmentsubtype_icon.png\",\n            \"name\": \"Table Cloth\",\n            \"price\": \"30.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 317\n        },\n        \"329\": {\n            \"default_price\": \"25.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1530008333_garmentsubtype_icon.png\",\n            \"name\": \"Sofa Chair Head Cover\",\n            \"price\": \"25.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 329\n        },\n        \"353\": {\n            \"default_price\": \"18.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1533820238_garmentsubtype_icon.png\",\n            \"name\": \"Apron Short\",\n            \"price\": \"18.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 353\n        },\n        \"354\": {\n            \"default_price\": \"30.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1533820347_garmentsubtype_icon.png\",\n            \"name\": \"Apron Long\",\n            \"price\": \"30.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 354\n        },\n        \"357\": {\n            \"default_price\": \"8.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1533904413_garmentsubtype_icon.png\",\n            \"name\": \"Table Napkin\",\n            \"price\": \"8.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 357\n        },\n        \"365\": {\n            \"default_price\": \"45.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1534494839_garmentsubtype_icon.png\",\n            \"name\": \"Bed Cover Single \",\n            \"price\": \"45.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 365\n        },\n        \"366\": {\n            \"default_price\": \"70.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1534494871_garmentsubtype_icon.png\",\n            \"name\": \"Bed Cover Double\",\n            \"price\": \"70.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 366\n        },\n        \"399\": {\n            \"default_price\": \"35.00\",\n            \"desc\": \"per seat\",\n            \"description\": \"per seat\",\n            \"icon\": \"1556719407_garmentsubtype_icon.png\",\n            \"name\": \"Sofa cover - single seat\",\n            \"price\": \"35.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 399\n        },\n        \"400\": {\n            \"default_price\": \"60.00\",\n            \"desc\": \"per 2 seat\",\n            \"description\": \"per 2 seat\",\n            \"icon\": \"1556719450_garmentsubtype_icon.png\",\n            \"name\": \"Sofa cover - two seats\",\n            \"price\": \"60.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 400\n        },\n        \"401\": {\n            \"default_price\": \"90.00\",\n            \"desc\": \"per 3 seat\",\n            \"description\": \"per 3 seat\",\n            \"icon\": \"1556719506_garmentsubtype_icon.png\",\n            \"name\": \"Sofa cover - three seats\",\n            \"price\": \"90.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 401\n        },\n        \"303\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528720393_garmentsubtype_icon.png\",\n            \"name\": \"School uniform - Shirt\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 303\n        },\n        \"304\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528720448_garmentsubtype_icon.png\",\n            \"name\": \"School uniform - Shorts\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 304\n        },\n        \"305\": {\n            \"default_price\": \"30.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528720588_garmentsubtype_icon.png\",\n            \"name\": \"School uniform full (Girls)\",\n            \"price\": \"30.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 305\n        },\n        \"318\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528984289_garmentsubtype_icon.png\",\n            \"name\": \"T-shirt\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 318\n        },\n        \"319\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528984331_garmentsubtype_icon.png\",\n            \"name\": \"Dungarees\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 319\n        },\n        \"320\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528984376_garmentsubtype_icon.png\",\n            \"name\": \"Frock\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 320\n        },\n        \"321\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528984410_garmentsubtype_icon.png\",\n            \"name\": \"Shorts\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 321\n        },\n        \"322\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528984442_garmentsubtype_icon.png\",\n            \"name\": \"Trousers/Jeans\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 322\n        },\n        \"323\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528984475_garmentsubtype_icon.png\",\n            \"name\": \"Baba suit\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 323\n        },\n        \"324\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528984512_garmentsubtype_icon.png\",\n            \"name\": \"Onesies\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 324\n        },\n        \"325\": {\n            \"default_price\": \"15.00\",\n            \"desc\": \"per piece\",\n            \"description\": \"per piece\",\n            \"icon\": \"1528984549_garmentsubtype_icon.png\",\n            \"name\": \"Shirt\",\n            \"price\": \"15.00\",\n            \"price_id\": 0,\n            \"sub_service_id\": 13,\n            \"subtype_id\": 325\n        }\n    },",
+											"type": "text"
+										},
+										{
+											"key": "total",
+											"value": "180.0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/pickup/pre-pickup",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"pickup",
+										"pre-pickup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "quick_pickup",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "staff_token",
+											"value": "172Eki+HpIcgYa+sJQowgjgxZDhhMzAzOWIxN2MwODM1ZmM4ODllMjI1ZTM3NGQ2M2E2N2FjZjJhMzk2NWM5ODEzNmJiMjQ0MzY5OGZiYmJSMAqT0D4zeFxpPY8jcdwrud8uqz3R6VAedQHA7fa9WmJYfkTQTERqPxNWa9xX8MfHwCjfVwKje9W+iL+VCtb/",
+											"type": "text"
+										},
+										{
+											"key": "bagInfo",
+											"value": "[{bagno: 1}]",
+											"type": "text"
+										},
+										{
+											"key": "order_id",
+											"value": "70861",
+											"type": "text"
+										},
+										{
+											"key": "orderstage_id",
+											"value": "196598",
+											"type": "text"
+										},
+										{
+											"key": "OrderItems",
+											"value": "[]",
+											"type": "text"
+										},
+										{
+											"key": "Orders",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "bagInfo",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "total_picked_items",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "total_items",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "stage_comments",
+											"value": "dfd",
+											"type": "text"
+										},
+										{
+											"key": "mode_of_payment",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "clothPics",
+											"value": "[{picComment: , picSrc: data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAIQAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMABgQFBgUEBgYFBgcHBggKEAoKCQkKFA4PDBAXFBgYFxQWFhodJR8aGyMcFhYgLCAjJicpKikZHy0wLSgwJSgpKP/bAEMBBwcHCggKEwoKEygaFhooKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKP/AABEI}]",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/pickup/quick-picked-up",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"pickup",
+										"quick-picked-up"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "start check",
+					"item": [
+						{
+							"name": "pickup_start_check",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "order_id",
+											"value": "72824",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/orders/isorder-delivery",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"orders",
+										"isorder-delivery"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delivery_start_check",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "order_id",
+											"value": "72824",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/orders/isorder-delivery",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"orders",
+										"isorder-delivery"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "city and pincode",
+			"item": [
+				{
+					"name": "City_list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/general/cities",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pincode_list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "state_id",
+									"value": "9",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city_id",
+									"value": "7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/general/pincodes/10/7",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"pincodes",
+								"10",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "city and pincode",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "state_id",
+									"value": "9",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city_id",
+									"value": "8",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/pincodes/bystatecity/9/7",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"pincodes",
+								"bystatecity",
+								"9",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "staff_profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "mQy/9cwBRT5JJaZ+hpoKa2E1MTQ5NGQwYWY1MWMxNDQwYTA5OTBkNWFlNGE5ODEzMzViNzE0MDcyYmZmOTMzMGY4M2U0NWU5OTg5NDZmOWJltaEttA64tntfm8KA1G4kx/fhF3hp1uqf1h/QprVRXXZMKt05R0/VOpRdH5IGeMXkoZWIu4T7QiAjHwU80IWy",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/staff/profile",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"staff",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vendors list",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/general/vendors",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"vendors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile_password_update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "wastik",
+									"type": "text"
+								},
+								{
+									"key": "cpassword",
+									"value": "wastik",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/staff/profile-password-update",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"staff",
+								"profile-password-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "staff_earning",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_id",
+									"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+									"type": "text"
+								},
+								{
+									"key": "distance",
+									"value": "6.5 km",
+									"type": "text"
+								},
+								{
+									"key": "time_taken",
+									"value": "15 mins",
+									"type": "text"
+								},
+								{
+									"key": "earning",
+									"value": "16.25",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "deliver",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/staff/deliver-data",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"staff",
+								"deliver-data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "desboard",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "172Eki+HpIcgYa+sJQowgjgxZDhhMzAzOWIxN2MwODM1ZmM4ODllMjI1ZTM3NGQ2M2E2N2FjZjJhMzk2NWM5ODEzNmJiMjQ0MzY5OGZiYmJSMAqT0D4zeFxpPY8jcdwrud8uqz3R6VAedQHA7fa9WmJYfkTQTERqPxNWa9xX8MfHwCjfVwKje9W+iL+VCtb/",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/general/dashboard",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Customer address",
+					"item": [
+						{
+							"name": "create address",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "customer_token",
+											"value": "K/ge3MSCxQW3vf/75WZ53GVlYzg4NmQ3ZDQ1ZjNlZjA3OWE3M2MxYmQ1OGUyYzIzZWI0Y2Y2ODdjODZiMGJkZDhhYjg1ZGUzZWRmNzc1MWL3iDQq/cQiKMmebkMTojTnMb3QQOaFpFDat9GUfpTaMs1ve3IPsoUrZ58XKemK4e0tYbTuO1yZMzd1MNovC/Nt",
+											"type": "text"
+										},
+										{
+											"key": "flat_no",
+											"value": "313",
+											"type": "text"
+										},
+										{
+											"key": "street",
+											"value": "Saffron complex",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "Fatehgunj",
+											"type": "text"
+										},
+										{
+											"key": "state_id",
+											"value": "9",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "7",
+											"type": "text"
+										},
+										{
+											"key": "pincode_id",
+											"value": "41",
+											"type": "text"
+										},
+										{
+											"key": "address_label",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "address_lat",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "address_lon",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://cc.vcantech.biz/api/v1/customers/createaddress",
+									"protocol": "https",
+									"host": [
+										"cc",
+										"vcantech",
+										"biz"
+									],
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"createaddress"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete address",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "customer_token",
+											"value": "K/ge3MSCxQW3vf/75WZ53GVlYzg4NmQ3ZDQ1ZjNlZjA3OWE3M2MxYmQ1OGUyYzIzZWI0Y2Y2ODdjODZiMGJkZDhhYjg1ZGUzZWRmNzc1MWL3iDQq/cQiKMmebkMTojTnMb3QQOaFpFDat9GUfpTaMs1ve3IPsoUrZ58XKemK4e0tYbTuO1yZMzd1MNovC/Nt",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://cc.vcantech.biz/api/v1/customers/deleteaddress/12303",
+									"protocol": "https",
+									"host": [
+										"cc",
+										"vcantech",
+										"biz"
+									],
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"deleteaddress",
+										"12303"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update address",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "customer_token",
+											"value": "K/ge3MSCxQW3vf/75WZ53GVlYzg4NmQ3ZDQ1ZjNlZjA3OWE3M2MxYmQ1OGUyYzIzZWI0Y2Y2ODdjODZiMGJkZDhhYjg1ZGUzZWRmNzc1MWL3iDQq/cQiKMmebkMTojTnMb3QQOaFpFDat9GUfpTaMs1ve3IPsoUrZ58XKemK4e0tYbTuO1yZMzd1MNovC/Nt",
+											"type": "text"
+										},
+										{
+											"key": "flat_no",
+											"value": "314",
+											"type": "text"
+										},
+										{
+											"key": "street",
+											"value": "Saffron complex",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "Fatehgunj",
+											"type": "text"
+										},
+										{
+											"key": "state_id",
+											"value": "9",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "7",
+											"type": "text"
+										},
+										{
+											"key": "pincode_id",
+											"value": "41",
+											"type": "text"
+										},
+										{
+											"key": "address_label",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "address_lat",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "address_lon",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://cc.vcantech.biz/api/v1/customers/updateaddress/12359",
+									"protocol": "https",
+									"host": [
+										"cc",
+										"vcantech",
+										"biz"
+									],
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"updateaddress",
+										"12359"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Create_new_customer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "staff_token",
+											"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "bhavin",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "9909214576",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "testing@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "fm",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "flat_no",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "9",
+											"type": "text"
+										},
+										{
+											"key": "state_id",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "vendor",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "pickupType",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "location_id",
+											"value": "12",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "corporate_id",
+											"value": "12",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "street",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "pincode_id",
+											"value": "53",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/pdapi/v1/general/issue-new-card",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"general",
+										"issue-new-card"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New_Api_Create_new_customer Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "firstName",
+											"value": "new",
+											"type": "text"
+										},
+										{
+											"key": "lastName",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "8327724111",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "gg",
+											"type": "text"
+										},
+										{
+											"key": "flat_no",
+											"value": "1234",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "390014",
+											"type": "text"
+										},
+										{
+											"key": "state_id",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "street",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "pincode_id",
+											"value": "testing",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/api/v1/customers/register-new",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"register-new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "check mobile number",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "number",
+											"value": "7894328687",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_boy}}/api/v1/customers/check-mobile",
+									"host": [
+										"{{clocare_boy}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"check-mobile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "otp",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "number",
+											"value": "7862060047",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://cc.vcantech.biz/api/v1/customers/check-mobile",
+									"protocol": "https",
+									"host": [
+										"cc",
+										"vcantech",
+										"biz"
+									],
+									"path": [
+										"api",
+										"v1",
+										"customers",
+										"check-mobile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "customer_info",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "Cg2IS5UC49jNo0DPQvv89mU0NzY2YmUxNzAyNjA1YTRhOWNiOWJiOTIwOTBhMDU5ZjJjZDAxZGNkMzE1N2ZiMjczNThhNTljYWViZjk3MjNV6gfhyiaend+bBrLDz7/+6aOdu9AM5MD29yQAbQOa6cmuCxNocWhy509VvmbKrTLqbbhcIGW5Udlq9tIhhXla",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "7894328687",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "8511558481",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "7862060047",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "8327724663",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "S 7359311728",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/general/customer-info",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"customer-info"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "new service",
+			"item": [
+				{
+					"name": "New Folder",
+					"item": [
+						{
+							"name": "garment_type_list",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "service_id",
+											"value": "6",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://cc.vcantech.biz/pdapi/v1/garment-types/byservicenew",
+									"protocol": "https",
+									"host": [
+										"cc",
+										"vcantech",
+										"biz"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"garment-types",
+										"byservicenew"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "garment_type_list Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "service_id",
+											"value": "6",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://cc.vcantech.biz/pdapi/v1/garment-types/byservicenew",
+									"protocol": "https",
+									"host": [
+										"cc",
+										"vcantech",
+										"biz"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"garment-types",
+										"byservicenew"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "services_list",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "at",
+										"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "state_id",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "9",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://cc.vcantech.biz/pdapi/v1/price-list/forallservicesnew",
+									"protocol": "https",
+									"host": [
+										"cc",
+										"vcantech",
+										"biz"
+									],
+									"path": [
+										"pdapi",
+										"v1",
+										"price-list",
+										"forallservicesnew"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "all_services",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "state_id",
+									"value": "6",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city_id",
+									"value": "13",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/price-list/forallservicesnew=",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"price-list",
+								"forallservicesnew="
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "state_id",
+									"value": "9",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city_id",
+									"value": "7",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "service_id",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/price-list/bystatecityservice",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"price-list",
+								"bystatecityservice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new all service",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "state_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "city_id",
+									"value": "9",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/price-list/forallservicesnew",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"price-list",
+								"forallservicesnew"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new all service Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "state_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "city_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "13",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/price-list/bystatecityservicenew",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"price-list",
+								"bystatecityservicenew"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service_type",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "13793",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/general/ordertypes",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"ordertypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service_terms",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/general/service-terms",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"service-terms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "take order",
+			"item": [
+				{
+					"name": "order_process",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+									"type": "text"
+								},
+								{
+									"key": "item_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/orders/orderinfobyprocessor",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"orders",
+								"orderinfobyprocessor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "take_order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_token",
+									"value": "yVhEvVcnjpW3SchS2dNYBzU2MjY4NmQ2OWYwMTRiOTJlMWIyNjBiNjNkMjBhNDJjYjllOTc0OTJjNTdhODVhYTc3YThkMWZlZGJjYzE4ZmTBU/1/x07rq0O3OTKDBpFttjqnbPUwAw0jFS3JF+5LCzmCdtbXRrCzs+e6k9tIq0K4wlb4e5KT4Elv2O/cdK2T",
+									"type": "text"
+								},
+								{
+									"key": "order_booked_by",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "pickup_date",
+									"value": "27-07-2023",
+									"type": "text"
+								},
+								{
+									"key": "pickup_slot_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "delivery_date",
+									"value": "28-07-2023",
+									"type": "text"
+								},
+								{
+									"key": "delivery_slot_id",
+									"value": "34",
+									"type": "text"
+								},
+								{
+									"key": "ordertype_id",
+									"value": "432",
+									"type": "text"
+								},
+								{
+									"key": "total_items",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "pickupaddress_id",
+									"value": "12356",
+									"type": "text"
+								},
+								{
+									"key": "deliveryaddress_id",
+									"value": "12356",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "same_as",
+									"value": "sdf",
+									"type": "text"
+								},
+								{
+									"key": "comments",
+									"value": "sfdsd",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/orders/placeorder",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"orders",
+								"placeorder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "coupon",
+			"item": [
+				{
+					"name": "add_coupon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "172Eki+HpIcgYa+sJQowgjgxZDhhMzAzOWIxN2MwODM1ZmM4ODllMjI1ZTM3NGQ2M2E2N2FjZjJhMzk2NWM5ODEzNmJiMjQ0MzY5OGZiYmJSMAqT0D4zeFxpPY8jcdwrud8uqz3R6VAedQHA7fa9WmJYfkTQTERqPxNWa9xX8MfHwCjfVwKje9W+iL+VCtb/",
+									"type": "text"
+								},
+								{
+									"key": "state_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "city_id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "70888",
+									"type": "text"
+								},
+								{
+									"key": "pincode_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "13706",
+									"type": "text"
+								},
+								{
+									"key": "booked_by",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "MONSOON15",
+									"type": "text"
+								},
+								{
+									"key": "ordertype",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "paddress_id",
+									"value": "12154",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "total_items",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/general/add-coupon",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"add-coupon"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "time slot",
+			"item": [
+				{
+					"name": "time_slot_list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://cc.vcantech.ca/pdapi/v1/time-slots/datewiselistnew/pickup/6/3/12359/26-07-2023",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"ca"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"time-slots",
+								"datewiselistnew",
+								"pickup",
+								"6",
+								"3",
+								"12359",
+								"26-07-2023"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "time_slot_list Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/time-slots/getdates/delivery/26-07-2023",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"time-slots",
+								"getdates",
+								"delivery",
+								"26-07-2023"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "time_slot_list Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "service_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "ordertype_id",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "12359",
+									"type": "text"
+								},
+								{
+									"key": "daddress_id",
+									"value": "12359",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "13793",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/general/getinitialdatetime",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"getinitialdatetime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "initial_date_time",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "address_id",
+									"value": "12331",
+									"type": "text"
+								},
+								{
+									"key": "daddress_id",
+									"value": "12331",
+									"type": "text"
+								},
+								{
+									"key": "ordertype_id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "13793",
+									"type": "text"
+								},
+								{
+									"key": "service_id",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/general/getinitialdatetime",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"getinitialdatetime"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "wallet",
+			"item": [
+				{
+					"name": "wallet_credit_customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "customer_token",
+									"value": "K/ge3MSCxQW3vf/75WZ53GVlYzg4NmQ3ZDQ1ZjNlZjA3OWE3M2MxYmQ1OGUyYzIzZWI0Y2Y2ODdjODZiMGJkZDhhYjg1ZGUzZWRmNzc1MWL3iDQq/cQiKMmebkMTojTnMb3QQOaFpFDat9GUfpTaMs1ve3IPsoUrZ58XKemK4e0tYbTuO1yZMzd1MNovC/Nt",
+									"type": "text"
+								},
+								{
+									"key": "transaction_amount",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "comments",
+									"value": "gg",
+									"type": "text"
+								},
+								{
+									"key": "pg_name",
+									"value": "dg",
+									"type": "text"
+								},
+								{
+									"key": "pg_txn_id",
+									"value": "fg",
+									"type": "text"
+								},
+								{
+									"key": "pg_name is payment type _> gpay, paytm",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "pg_txn_id -> Transaction Id.",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cc.vcantech.biz/pdapi/v1/customers/wallet-credit",
+							"protocol": "https",
+							"host": [
+								"cc",
+								"vcantech",
+								"biz"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"customers",
+								"wallet-credit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer_balances",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "13852",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "71921",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/general/customer-balance",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"general",
+								"customer-balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "collect_cash",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "13793",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "700",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/pickup/collect-cash",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"pickup",
+								"collect-cash"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "process_amount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "72825",
+									"type": "text"
+								},
+								{
+									"key": "mode_of_payment",
+									"value": "wallet",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/orders/processing-payment",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"orders",
+								"processing-payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order not able to deliver",
+			"item": [
+				{
+					"name": "delivery_attempted",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "72773",
+									"type": "text"
+								},
+								{
+									"key": "reason_code",
+									"value": "na",
+									"type": "text"
+								},
+								{
+									"key": "reason",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/orders/delivery-attempted",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"orders",
+								"delivery-attempted"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order_info",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "staff_token",
+									"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "72824",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/orders/orderinfo",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"orders",
+								"orderinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pickup_attempted",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "at",
+								"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "staff_token",
+									"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+									"type": "text"
+								},
+								{
+									"key": "reason_code",
+									"value": "dc",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "72803",
+									"type": "text"
+								},
+								{
+									"key": "new_pickup_date",
+									"value": "01-08-2023",
+									"type": "text"
+								},
+								{
+									"key": "new_pickup_time",
+									"value": "df",
+									"type": "text"
+								},
+								{
+									"key": "reason",
+									"value": "Door was closed",
+									"type": "text"
+								},
+								{
+									"key": "picsrc",
+									"value": "fd",
+									"type": "text"
+								},
+								{
+									"key": "currentlat",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "currentlon",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{clocare_boy}}/pdapi/v1/orders/pickup-attempted",
+							"host": [
+								"{{clocare_boy}}"
+							],
+							"path": [
+								"pdapi",
+								"v1",
+								"orders",
+								"pickup-attempted"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notification_count",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "at",
+						"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "staff_token",
+							"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{clocare_boy}}/pdapi/v1/general/new-notification-count",
+					"host": [
+						"{{clocare_boy}}"
+					],
+					"path": [
+						"pdapi",
+						"v1",
+						"general",
+						"new-notification-count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "garment_by-services",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "at",
+						"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "staff_token",
+							"value": "4i8ZM9Q6J4/+DsWrNRyToGRjNTY0ZjIyNGVhYWY1ZDQ4NGNiNTIyYzc2ZmYzYmZlYmYwMjIwY2RhZDZiNGQ4YTU3YWViOGM1NWIxZDBiZTJYz4zspLYh6HVRTdlrGoqIBX1oo/GMK0l25yNYN+DbzJNC8v/le2Yd93JPiBrWn11CX1QngL/QgnOQnwTCfc6V",
+							"type": "text"
+						},
+						{
+							"key": "service_id",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{clocare_boy}}/pdapi/v1/garment-types/byservice",
+					"host": [
+						"{{clocare_boy}}"
+					],
+					"path": [
+						"pdapi",
+						"v1",
+						"garment-types",
+						"byservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "at",
+						"value": "Bearer 466fdac7291ffb284856e6a25a15cbad",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "service",
+							"value": "{\n    \"pickup\": {\n      \"orderstage_id\": 201686,\n      \"comment\": \"\",\n      \"rating\": 5,\n      \"isNegative\": false,\n      \"foptions\": [\n        {\n          \"feedback_option_id\": 1,\n          \"feedback_option_for_negative\": 0,\n          \"feedback_type\": \"Pickup\",\n          \"feedback_option_for_service\": 6,\n          \"feedback_option\": \"Ontime pickup\",\n          \"feedback_option_status\": 4,\n          \"created_on\": \"2017-03-22 00:00:00\",\n          \"last_modified_on\": null,\n          \"checked\": 1\n        },\n        {\n          \"feedback_option_id\": 2,\n          \"feedback_option_for_negative\": 0,\n          \"feedback_type\": \"Pickup\",\n          \"feedback_option_for_service\": 6,\n          \"feedback_option\": \"Good behaviour of pickup person\",\n          \"feedback_option_status\": 4,\n          \"created_on\": \"2017-03-22 00:00:00\",\n          \"last_modified_on\": null,\n          \"checked\": -1\n        }\n      ]\n    },\n    \"processing\": {\n      \"orderstage_id\": 201687,\n      \"comment\": \"\",\n      \"rating\": 5,\n      \"isNegative\": false,\n      \"foptions\": [\n        {\n          \"feedback_option_id\": 9,\n          \"feedback_option_for_negative\": 0,\n          \"feedback_type\": \"Processing\",\n          \"feedback_option_for_service\": 6,\n          \"feedback_option\": \"Good quality\",\n          \"feedback_option_status\": 4,\n          \"created_on\": \"2017-03-22 00:00:00\",\n          \"last_modified_on\": null,\n          \"checked\": 9\n        },\n        {\n          \"feedback_option_id\": 10,\n          \"feedback_option_for_negative\": 0,\n          \"feedback_type\": \"Processing\",\n          \"feedback_option_for_service\": 6,\n          \"feedback_option\": \"Nice packing\",\n          \"feedback_option_status\": 4,\n          \"created_on\": \"2017-03-22 00:00:00\",\n          \"last_modified_on\": null,\n          \"checked\": 10\n        }\n      ]\n    },\n    \"delivery\": {\n      \"orderstage_id\": 202171,\n      \"comment\": \"\",\n      \"rating\": 5,\n      \"isNegative\": false,\n      \"foptions\": [\n        {\n          \"feedback_option_id\": 5,\n          \"feedback_option_for_negative\": 0,\n          \"feedback_type\": \"Delivery\",\n          \"feedback_option_for_service\": 6,\n          \"feedback_option\": \"Ontime delivery\",\n          \"feedback_option_status\": 4,\n          \"created_on\": \"2017-03-22 00:00:00\",\n          \"last_modified_on\": null,\n          \"checked\": 5\n        },\n        {\n          \"feedback_option_id\": 6,\n          \"feedback_option_for_negative\": 0,\n          \"feedback_type\": \"Delivery\",\n          \"feedback_option_for_service\": 6,\n          \"feedback_option\": \"Good behaviour of delivery person\",\n          \"feedback_option_status\": 4,\n          \"created_on\": \"2017-03-22 00:00:00\",\n          \"last_modified_on\": null,\n          \"checked\": -1\n        }\n      ]\n    }\n  },",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{clocare_boy}}/pdapi/v1/general/feedback-options",
+					"host": [
+						"{{clocare_boy}}"
+					],
+					"path": [
+						"pdapi",
+						"v1",
+						"general",
+						"feedback-options"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "staff_token",
+							"value": "4pyi9VQrHxJpvvBfsptUHDFhOTFhZDNlNWViZDU2MjU0YzA5M2JhNDg5N2NkNTBjMDg4MTdhM2JmNTU5NGYxNmUzYWUwYTg3ZmI4OTBlYmKu0Rq3NjwOy5aAPnesbvL/E+pBBN7usOQjmzQJgKrQa7082G9rJrwNl22LTCrCUy6+QHT4t1ChkUDtVDq9P4II",
+							"type": "text"
+						},
+						{
+							"key": "order_id",
+							"value": "72945",
+							"type": "text"
+						},
+						{
+							"key": "orderstage_id",
+							"value": "202846",
+							"type": "text"
+						},
+						{
+							"key": "Orders",
+							"value": "{\n            \"order_id\": 72945,\n            \"order_display_id\": \"ORD974172945\",\n            \"customer_id\": 13793,\n            \"service_id\": 12,\n            \"pickup_date\": \"2023-08-07\",\n            \"pickup_slot_id\": 63,\n            \"pref_pickup_time\": null,\n            \"delivery_date\": \"2023-08-08\",\n            \"delivery_slot_id\": 63,\n            \"pref_delivery_time\": null,\n            \"ordertype_id\": 12,\n            \"order_total\": \"0.00\",\n            \"order_sub_total\": \"0.00\",\n            \"order_amount\": \"0.00\",\n            \"order_taxes\": \"0.00\",\n            \"order_outstanding_amount\": \"0.00\",\n            \"total_items\": 15,\n            \"total_rcvd_items\": 0,\n            \"total_dlvrd_items\": 0,\n            \"comments\": \"\\n                                                \",\n            \"pickupaddress_id\": 12331,\n            \"deliveryaddress_id\": 12331,\n            \"same_as\": \"1\",\n            \"pickup_flat_no\": \"123\",\n            \"pickup_street\": \"fategahgunj\",\n            \"pickup_landmark\": \"fategahgunj\",\n            \"pickup_state_id\": 9,\n            \"pickup_city_id\": 7,\n            \"pickup_pincode_id\": 41,\n            \"pickup_lat\": null,\n            \"pickup_lng\": null,\n            \"delivery_flat_no\": \"123\",\n            \"delivery_street\": \"fategahgunj\",\n            \"delivery_landmark\": \"fategahgunj\",\n            \"delivery_state_id\": 9,\n            \"delivery_city_id\": 7,\n            \"delivery_pincode_id\": 41,\n            \"delivery_lat\": null,\n            \"delivery_lng\": null,\n            \"order_booked_by\": 13864,\n            \"at_place\": null,\n            \"status\": \"Unpaid\",\n            \"cancelled\": 0,\n            \"cancellation_reason\": null,\n            \"cancelled_on\": null,\n            \"cancelled_by\": \"\",\n            \"cancelled_by_id\": 0,\n            \"initial_assigned_to\": 263,\n            \"delivery_assigned_to\": 0,\n            \"extra_pay\": 0,\n            \"extra_paid_amount\": 0,\n            \"extra_paid_on\": \"0000-00-00 00:00:00\",\n            \"extra_paid_by\": 0,\n            \"is_feedback_rcvd\": 0,\n            \"is_marked_as_auto_feedback\": 0,\n            \"feedback_rcvd_on\": null,\n            \"is_pickedup\": 0,\n            \"is_processed\": 0,\n            \"is_delivered\": 0,\n            \"is_collected_in_person\": 0,\n            \"is_auto_routed\": 0,\n            \"is_refunded\": 0,\n            \"refunded_amount\": \"0.00\",\n            \"refunded_on\": null,\n            \"refunded_by\": null,\n            \"refund_comment\": null,\n            \"submit_to\": null,\n            \"submitted_by\": null,\n            \"is_submitted\": null,\n            \"submitted_on\": null,\n            \"is_repeated\": 0,\n            \"rate_multiplier\": \"2.50\",\n            \"is_paid_to_vendor\": 0,\n            \"is_payable_calculated\": 0,\n            \"delivery_attempts\": 0,\n            \"pickup_attempts\": 0,\n            \"is_invoice_generated\": 0,\n            \"invoice_num\": null,\n            \"invoice_file\": null,\n            \"invoiced_on\": null,\n            \"additional_charges\": \"25.00\",\n            \"is_proforma_invoice_generated\": 0,\n            \"proforma_invoice_num\": null,\n            \"proforma_invoice_file\": null,\n            \"proforma_invoiced_on\": null,\n            \"origin_source\": \"APP\",\n            \"order_booked_by_staff\": null,\n            \"payment_method\": null,\n            \"ref_discount\": \"0.00\",\n            \"ref_discount_msg\": null,\n            \"is_bill_generated\": 0,\n            \"feedback_followup_request_status\": null,\n            \"schedule_date\": null,\n            \"mode_of_payment\": null,\n            \"closed_on\": null,\n            \"corporate_id\": null,\n            \"corporate_location_id\": null,\n            \"corporate_unit_id\": null,\n            \"is_generated_by_scheduler\": 0,\n            \"monthly_subscription\": 0,\n            \"parent_order_id\": 0,\n            \"additional_discount\": \"0.00\",\n            \"additional_discount_type\": null,\n            \"additional_discount_amount\": \"0.00\",\n            \"special_discount\": 0,\n            \"additional_cb\": \"0.00\",\n            \"additional_cb_type\": null,\n            \"additional_cb_amount\": \"0.00\",\n            \"special_discount_type\": null,\n            \"special_discount_amount\": \"0.00\",\n            \"special_comment\": \"\",\n            \"is_donation\": 0,\n            \"pref_pickup_time_charge\": \"0.00\",\n            \"pref_delivery_time_charge\": \"0.00\",\n            \"has_pref_pickup_time\": 0,\n            \"has_pref_delivery_time\": 0,\n            \"needs_verification\": 2,\n            \"verified_by\": 34,\n            \"verified_on\": \"2023-08-07 17:27:36\",\n            \"verified_by_responsible_person\": 34,\n            \"is_lf\": 0,\n            \"is_quickly_pickedup\": 0,\n            \"created_on\": \"2023-08-07 17:24:47\",\n            \"last_modified_on\": \"2023-08-07 17:32:47\",\n            \"additional_cb_redeemed\": null,\n            \"additional_cb_redeemed_on\": null,\n            \"additional_cb_redeemed_for\": null,\n            \"order_taxable_amount\": \"0.00\",\n            \"related_center_id\": 1,\n            \"is_returned_order\": 0,\n            \"return_order_id\": null,\n            \"total_returned_count\": 0,\n            \"delivery_pack_id\": null,\n            \"delivery_pack_price\": \"0.00\",\n            \"delivery_pack_extra_included\": 0,\n            \"is_regular\": 1,\n            \"is_senior_citizens\": 0,\n            \"is_covid_patients\": 0,\n            \"covid_patient_amount\": \"0.00\",\n            \"is_covid_centers\": 0,\n            \"cancellation_charges\": \"0.00\",\n            \"cancellation_charges_pay\": 0,\n            \"reschedule_charges\": \"0.00\",\n            \"hold_amount\": 0,\n            \"pay_on_pickup\": 0,\n            \"delivery_charges\": \"0.00\",\n            \"order_stages\": [\n                {\n                    \"stage_order\": 1,\n                    \"orderstage_id\": 202846,\n                    \"stage_title\": \"Pickup\",\n                    \"stage_status\": \"Pending\",\n                    \"assigned_to_id\": 263,\n                    \"assigned_to\": \"wastik ansari (8327724967)\",\n                    \"staged_by\": \"\",\n                    \"stage_comments\": null,\n                    \"staged_on\": \"2023-08-07 17:24:47\",\n                    \"staged_laston\": \"2023-08-07 17:32:47\",\n                    \"customer_feedback_rating\": 0,\n                    \"customer_feedback_comment\": \"\",\n                    \"customer_feedback_received_on\": null,\n                    \"stage_by_sep_name\": \"\",\n                    \"stage_by_sep_phone\": \"\"\n                },\n                {\n                    \"stage_order\": 2,\n                    \"stage_title\": \"Processing\",\n                    \"stage_status\": \"\",\n                    \"assigned_to_id\": \"\",\n                    \"assigned_to\": \"\",\n                    \"staged_by\": \"\",\n                    \"stage_comment\": \"\",\n                    \"staged_on\": \"\",\n                    \"staged_laston\": \"\",\n                    \"orderstage_id\": 0,\n                    \"customer_feedback_rating\": \"\",\n                    \"customer_feedback_comment\": \"\",\n                    \"customer_feedback_received_on\": \"\",\n                    \"stage_by_sep_name\": \"\",\n                    \"stage_by_sep_phone\": \"\"\n                },\n                {\n                    \"stage_order\": 3,\n                    \"stage_title\": \"Delivery\",\n                    \"stage_status\": \"\",\n                    \"assigned_to_id\": \"\",\n                    \"assigned_to\": \"\",\n                    \"staged_by\": \"\",\n                    \"stage_comment\": \"\",\n                    \"staged_on\": \"\",\n                    \"staged_laston\": \"\",\n                    \"orderstage_id\": 0,\n                    \"customer_feedback_rating\": \"\",\n                    \"customer_feedback_comment\": \"\",\n                    \"customer_feedback_received_on\": \"\",\n                    \"stage_by_sep_name\": \"\",\n                    \"stage_by_sep_phone\": \"\"\n                }\n            ],\n            \"isPickedUp\": false,\n            \"isProcessed\": false,\n            \"isDelivered\": false,\n            \"service\": {\n                \"name\": \"Wash\",\n                \"banner\": \"1615037586_service_banner.jpg\"\n            },\n            \"orderType\": {\n                \"type_name\": \"Express Service\",\n                \"allow_user_to_choose_garments\": 0,\n                \"min_ord_val\": \"30.00\",\n                \"is_instant\": 1\n            },\n            \"orderBookedBy\": {\n                \"mobile\": \"8327724967\",\n                \"name\": \"Test Tewt\",\n                \"id\": 13864,\n                \"push_id\": \"fed3-x3ESBKILK1sxfHwuA:APA91bE-NKo52A4pYdpzA-f1JJ_5FAWooLgXxCqA24HHJZu557_t9Rv5KWXferFdQxJJDQLb_H6Q0gqZVl5OqcRYx99w1QS0RUxsm1vwGKq-ocRqujUgD5oJmPbmGw3ujxNg2BeX1gia\"\n            },\n            \"pickupPincodes\": {\n                \"area_name\": \"Chhani road\",\n                \"pincode\": \"390002\"\n            },\n            \"pickupCities\": {\n                \"city_name\": \"Vadodara\"\n            },\n            \"pickupStates\": {\n                \"state_name\": \"Gujarat\"\n            },\n            \"timeSlot\": {\n                \"starts_on\": 1691404200,\n                \"ends_on\": 1691415000\n            },\n            \"formatted_pickup_address\": \"123, fategahgunj,fategahgunj,Chhani road,Vadodara-390002,Gujarat\",\n            \"deliveryPincodes\": {\n                \"area_name\": \"Chhani road\",\n                \"pincode\": \"390002\"\n            },\n            \"deliveryCities\": {\n                \"city_name\": \"Vadodara\"\n            },\n            \"deliveryStates\": {\n                \"state_name\": \"Gujarat\"\n            },\n            \"deliveryTimeSlot\": {\n                \"starts_on\": 1691404200,\n                \"ends_on\": 1691415000\n            },\n            \"formatted_delivery_address\": \"123, fategahgunj,fategahgunj,Chhani road,Vadodara-390002,Gujarat\",\n            \"taxes\": [],\n            \"offer\": null,\n            \"orderWiseStages\": [\n                {\n                    \"orderstage_id\": 202846,\n                    \"order_id\": 72945,\n                    \"stage_id\": 29,\n                    \"stage_status\": 10,\n                    \"stage_comments\": null,\n                    \"staged_by\": null,\n                    \"barcode\": null,\n                    \"next_stage_id\": null,\n                    \"last_modified_on\": \"2023-08-07 17:32:47\",\n                    \"created_on\": \"2023-08-07 17:24:47\",\n                    \"title\": \"Pickup\",\n                    \"display_order\": 1\n                }\n            ],\n            \"PickupPersonInfo\": {\n                \"person_id\": 0,\n                \"person\": \"\",\n                \"number\": \"\",\n                \"away\": \"\",\n                \"lat\": \"\",\n                \"lon\": \"\"\n            },\n            \"orderItems\": []\n        }",
+							"type": "text"
+						},
+						{
+							"key": "bagInfo",
+							"value": "[\n       {\n          \"bagno\":\"1\"\n       }\n    ],",
+							"type": "text"
+						},
+						{
+							"key": "total_picked_items",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "stage_comments",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "recording_audio",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cc.vcantech.ca/pdapi/v1/pickup/recording-pickup",
+					"protocol": "https",
+					"host": [
+						"cc",
+						"vcantech",
+						"ca"
+					],
+					"path": [
+						"pdapi",
+						"v1",
+						"pickup",
+						"recording-pickup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

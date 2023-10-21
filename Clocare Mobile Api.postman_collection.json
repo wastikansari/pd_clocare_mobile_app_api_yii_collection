@@ -1,0 +1,1751 @@
+{
+	"info": {
+		"_postman_id": "02d822dd-2692-48c4-880d-9896a261f7c4",
+		"name": "Clocare Mobile Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23237330"
+	},
+	"item": [
+		{
+			"name": "services",
+			"item": [
+				{
+					"name": "services_category",
+					"item": [
+						{
+							"name": "services_category",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "categoryName",
+											"value": "dat",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/admin/services_category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"admin",
+										"services_category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "services_category",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "type",
+											"value": "Iron",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Our ironing experts are well ",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/admin/services_categor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"admin",
+										"services_categor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "services_category",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "type",
+											"value": "Iron",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Our ironing experts are well ",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/admin/services_categor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"admin",
+										"services_categor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "services_category",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "type",
+											"value": "Iron",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Our ironing experts are well ",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/admin/services_category/647b2d767f1abfbd655e46a9?categoryName=red",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"admin",
+										"services_category",
+										"647b2d767f1abfbd655e46a9"
+									],
+									"query": [
+										{
+											"key": "categoryName",
+											"value": "red"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "services_packages",
+					"item": [
+						{
+							"name": "add_packages",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Ironings",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Our ironing experts are well trained to use a steam iron to press your clothes perfectly, thereby generating the wrinkle-free immaculate look by pressing your clothes properly. They understand fabric and its properties, and use the right temperature and pressure to give that perfect finish.",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/service",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"service"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "services_packages",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Ironings",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Our ironing experts are well trained to use a steam iron to press your clothes perfectly, thereby generating the wrinkle-free immaculate look by pressing your clothes properly. They understand fabric and its properties, and use the right temperature and pressure to give that perfect finish.",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/service",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"service"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "services_packages",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Ironings",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Our ironing experts are well trained to use a steam iron to press your clothes perfectly, thereby generating the wrinkle-free immaculate look by pressing your clothes properly. They understand fabric and its properties, and use the right temperature and pressure to give that perfect finish.",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/service",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"service"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "services_packages",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Ironings",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Our ironing experts are well trained to use a steam iron to press your clothes perfectly, thereby generating the wrinkle-free immaculate look by pressing your clothes properly. They understand fabric and its properties, and use the right temperature and pressure to give that perfect finish.",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/service",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"service"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "pickup_slot",
+					"item": [
+						{
+							"name": "pickup_slot",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "pickupSlot",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/admin/pickup_slot",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"admin",
+										"pickup_slot"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pickup_slot",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "pickupSlot",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/admin/pickup_slot",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"admin",
+										"pickup_slot"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pickup_slot",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "pickupSlot",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/admin/pickup_slot",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"admin",
+										"pickup_slot"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pickup_slot",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "pickupSlot",
+											"value": "123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/admin/pickup_slot",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"admin",
+										"pickup_slot"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "userPackage",
+			"item": [
+				{
+					"name": "packages",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "userDetails",
+			"item": [
+				{
+					"name": "address",
+					"item": [
+						{
+							"name": "address",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDdkOThhNTBiMmM3MjYzNGE5NzE3ZDAiLCJpYXQiOjE2ODU5NTI2NzcsImV4cCI6MTcxNzUxMDI3N30.eRiVKjxOtcfckiKMhOG-LoECOSORnRpn3zKxgjenoYk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "flat",
+											"value": "villa201",
+											"type": "text"
+										},
+										{
+											"key": "area",
+											"value": "Laxmipura",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Vadodara",
+											"type": "text"
+										},
+										{
+											"key": "pincode",
+											"value": "877709",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "Gugrat",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:30002/api/user_address",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "30002",
+									"path": [
+										"api",
+										"user_address"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGVkZDVjYjU4YmQ1NzdkZjQ4ZDZlNTAiLCJyb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE2OTMzMDgzNjMsImV4cCI6MTcyNDg2NTk2M30.ZkroLM0FXcX6YlKv-_Hr5UOxlIHKkYayPyYGAvyIQdg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "edf",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/user/Downloads/pngwing.com (6).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{testing}}/api/products",
+							"host": [
+								"{{testing}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGVkYzk5ZTBhOGUwNTJkNTgxNTI2NzEiLCJyb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE2OTMzMDU3MTcsImV4cCI6MTcyNDg2MzMxN30.7Jg84ubaRveWarTYwfvdOqy0PH28-dhKzysGSQSacd0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "eeee",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "32",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{testing}}/api/products/64edce69a6a4ff751ca281ed",
+							"host": [
+								"{{testing}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"64edce69a6a4ff751ca281ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGVkYzk5ZTBhOGUwNTJkNTgxNTI2NzEiLCJyb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE2OTMzMDU3MTcsImV4cCI6MTcyNDg2MzMxN30.7Jg84ubaRveWarTYwfvdOqy0PH28-dhKzysGSQSacd0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "wwww",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "32",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{testing}}/api/products/64edced9a6a4ff751ca281ef",
+							"host": [
+								"{{testing}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"64edced9a6a4ff751ca281ef"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "wallet",
+					"item": [
+						{
+							"name": "add_money",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYzkyZmI4OThiNWNiNTNkNDVhNjAiLCJpYXQiOjE2OTU2NjQ0MzEsImV4cCI6MTcyNzIyMjAzMX0.dUBwWH0cMYtqOO-1Np28FAlnTJQxJ_be9sTEdUOR9mc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "amount",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "transaction_id",
+											"value": "1234",
+											"type": "text"
+										},
+										{
+											"key": "transaction_type",
+											"value": "credit",
+											"type": "text"
+										},
+										{
+											"key": "payment_geteway_resporse",
+											"value": "successful",
+											"type": "text"
+										},
+										{
+											"key": "amount_credit_reason",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "amount_debit_reason",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "fsd",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "sdf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/customer/wallet/deposit",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"wallet",
+										"deposit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "wallet_balances",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYzkyZmI4OThiNWNiNTNkNDVhNjAiLCJpYXQiOjE2OTU2NjQ0MzEsImV4cCI6MTcyNzIyMjAzMX0.dUBwWH0cMYtqOO-1Np28FAlnTJQxJ_be9sTEdUOR9mc",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{clocare_api}}/api/customer/wallet/balance",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"wallet",
+										"balance"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "transaction_history",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYzkyZmI4OThiNWNiNTNkNDVhNjAiLCJpYXQiOjE2OTU2NjQ0MzEsImV4cCI6MTcyNzIyMjAzMX0.dUBwWH0cMYtqOO-1Np28FAlnTJQxJ_be9sTEdUOR9mc",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{clocare_api}}/api/customer/wallet/transaction",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"wallet",
+										"transaction"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "address",
+					"item": [
+						{
+							"name": "add_address",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYjMzZmNkOWZkNTY4N2ZiODc2MTQiLCJpYXQiOjE2OTU2NTg4MTUsImV4cCI6MTcyNzIxNjQxNX0.Ww1DHt85kanLP84a7K8G7QOFeF3kFQjIAvrhknVQBno",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "flat_no",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "street",
+											"value": "new",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "ddd",
+											"type": "text"
+										},
+										{
+											"key": "state_id",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "state_name",
+											"value": "Gujarat",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "23",
+											"type": "text"
+										},
+										{
+											"key": "city_name",
+											"value": "Vadodara",
+											"type": "text"
+										},
+										{
+											"key": "pincode_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "pincode_no",
+											"value": "32343",
+											"type": "text"
+										},
+										{
+											"key": "address_type",
+											"value": "Home",
+											"type": "text"
+										},
+										{
+											"key": "address_label",
+											"value": "pickup",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "false",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/address/add",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"address",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "address_list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYjMzZmNkOWZkNTY4N2ZiODc2MTQiLCJpYXQiOjE2OTU2NTg4MTUsImV4cCI6MTcyNzIxNjQxNX0.Ww1DHt85kanLP84a7K8G7QOFeF3kFQjIAvrhknVQBno",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/address/list",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"address",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update_address",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGY5ODU3OWM1MjZkNzA2NDAwYzczODUiLCJpYXQiOjE2OTQwNzQyMzMsImV4cCI6MTcyNTYzMTgzM30.1qMqr5C0Y-Nt1q7_B5ucsBsd4yb6DQo-OV59XuUQOwg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "flat_no",
+											"value": "as",
+											"type": "text"
+										},
+										{
+											"key": "street",
+											"value": "wastik12",
+											"type": "text"
+										},
+										{
+											"key": "landmark",
+											"value": "ddd",
+											"type": "text"
+										},
+										{
+											"key": "state_id",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "state_name",
+											"value": "Gujarat",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "23",
+											"type": "text"
+										},
+										{
+											"key": "city_name",
+											"value": "Vadodara",
+											"type": "text"
+										},
+										{
+											"key": "pincode_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "pincode_no",
+											"value": "32343",
+											"type": "text"
+										},
+										{
+											"key": "address_type",
+											"value": "Home",
+											"type": "text"
+										},
+										{
+											"key": "address_label",
+											"value": "pickup",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "false",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/address/update/6504494d9c2886c5986f6cee",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"address",
+										"update",
+										"6504494d9c2886c5986f6cee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete_address",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGY5ODU3OWM1MjZkNzA2NDAwYzczODUiLCJpYXQiOjE2OTQwNzQyMzMsImV4cCI6MTcyNTYzMTgzM30.1qMqr5C0Y-Nt1q7_B5ucsBsd4yb6DQo-OV59XuUQOwg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/address/delete/6504494d9c2886c5986f6cee",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"address",
+										"delete",
+										"6504494d9c2886c5986f6cee"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "rahul",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "121212121",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/register",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "mobile",
+											"value": "8327724967",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/login",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "number_check",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "mobile",
+											"value": "8327724911",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/check-mobile",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"check-mobile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "send_otp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "phone",
+											"value": "8327724967",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/send-otp",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"send-otp"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "profile",
+					"item": [
+						{
+							"name": "profile_update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYzkyZmI4OThiNWNiNTNkNDVhNjAiLCJpYXQiOjE2OTU2NjQ0MzEsImV4cCI6MTcyNzIyMjAzMX0.dUBwWH0cMYtqOO-1Np28FAlnTJQxJ_be9sTEdUOR9mc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "wwwwwwwww",
+											"type": "text"
+										},
+										{
+											"key": "email_id",
+											"value": "sf",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "sdfs",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "sf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/customer/profile/update",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"profile",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "profile_email_update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYzkyZmI4OThiNWNiNTNkNDVhNjAiLCJpYXQiOjE2OTU2NjQ0MzEsImV4cCI6MTcyNzIyMjAzMX0.dUBwWH0cMYtqOO-1Np28FAlnTJQxJ_be9sTEdUOR9mc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "wwwwwwwww",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "email_id",
+											"value": "sf",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "sdfs",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "dob",
+											"value": "sf",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/customer/profile/email/update",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"profile",
+										"email",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user_profile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYzkyZmI4OThiNWNiNTNkNDVhNjAiLCJpYXQiOjE2OTU2NjQ0MzEsImV4cCI6MTcyNzIyMjAzMX0.dUBwWH0cMYtqOO-1Np28FAlnTJQxJ_be9sTEdUOR9mc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "sdfs",
+											"type": "text"
+										},
+										{
+											"key": "email_id",
+											"value": "sf",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "sdfs",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "sf",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/customer/profile",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "order",
+					"item": [
+						{
+							"name": "order_create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYjMzZmNkOWZkNTY4N2ZiODc2MTQiLCJpYXQiOjE2OTU2NTg4MTUsImV4cCI6MTcyNzIxNjQxNX0.Ww1DHt85kanLP84a7K8G7QOFeF3kFQjIAvrhknVQBno",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "order_type",
+											"value": "Service order",
+											"type": "text"
+										},
+										{
+											"key": "service_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "service_name",
+											"value": "wash",
+											"type": "text"
+										},
+										{
+											"key": "items",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "COD",
+											"type": "text"
+										},
+										{
+											"key": "payment_status",
+											"value": "unpaid",
+											"type": "text"
+										},
+										{
+											"key": "pickup_date",
+											"value": "08-oct-2023",
+											"type": "text"
+										},
+										{
+											"key": "pickup_time",
+											"value": "9:00 AM - 2:00 PM",
+											"type": "text"
+										},
+										{
+											"key": "delivery_date",
+											"value": "09-oct-2023",
+											"type": "text"
+										},
+										{
+											"key": "delivery_time",
+											"value": "9:00 AM - 2:00 PM",
+											"type": "text"
+										},
+										{
+											"key": "pickup_address",
+											"value": "Laxmipura, vadodara, gujrat",
+											"type": "text"
+										},
+										{
+											"key": "delivery_address",
+											"value": "Laxmipura, vadodara, gujrat",
+											"type": "text"
+										},
+										{
+											"key": "pickup_address_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "delivery_address_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "ord_status",
+											"value": "order place",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/customer/order/create",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"order",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "basket_order_create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYzkyZmI4OThiNWNiNTNkNDVhNjAiLCJpYXQiOjE2OTU2NjQ0MzEsImV4cCI6MTcyNzIyMjAzMX0.dUBwWH0cMYtqOO-1Np28FAlnTJQxJ_be9sTEdUOR9mc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "order_type",
+											"value": "Basket order",
+											"type": "text"
+										},
+										{
+											"key": "no_of_servic",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "service_name",
+											"value": "wash, Ironing",
+											"type": "text"
+										},
+										{
+											"key": "items",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "items_list",
+											"value": "''",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "COP",
+											"type": "text"
+										},
+										{
+											"key": "payment_status",
+											"value": "Unpaid",
+											"type": "text"
+										},
+										{
+											"key": "amount",
+											"value": "125",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "COP",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "pickup_date",
+											"value": "08-oct-2023",
+											"type": "text"
+										},
+										{
+											"key": "pickup_time",
+											"value": "9:00 AM - 2:00 PM",
+											"type": "text"
+										},
+										{
+											"key": "delivery_date",
+											"value": "09-oct-2023",
+											"type": "text"
+										},
+										{
+											"key": "delivery_time",
+											"value": "9:00 AM - 2:00 PM",
+											"type": "text"
+										},
+										{
+											"key": "pickup_address_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "delivery_address_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "ord_status",
+											"value": "order place",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/customer/basket/order/create",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"basket",
+										"order",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "subscription",
+					"item": [
+						{
+							"name": "subscription_create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTExYjMzZmNkOWZkNTY4N2ZiODc2MTQiLCJpYXQiOjE2OTU2NTg4MTUsImV4cCI6MTcyNzIxNjQxNX0.Ww1DHt85kanLP84a7K8G7QOFeF3kFQjIAvrhknVQBno",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "package_id",
+											"value": "651cf599e420272205ecef09",
+											"type": "text"
+										},
+										{
+											"key": "address_id",
+											"value": "65211767cd9b0b4ec8c20cc6",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "wastik@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "package_valid",
+											"value": "30",
+											"type": "text"
+										},
+										{
+											"key": "package_prices",
+											"value": "1575",
+											"type": "text"
+										},
+										{
+											"key": "pickup_day",
+											"value": "Monday",
+											"type": "text"
+										},
+										{
+											"key": "pickup_slot",
+											"value": "9:00 pm - 12:00 am",
+											"type": "text"
+										},
+										{
+											"key": "amount_pay",
+											"value": "1575",
+											"type": "text"
+										},
+										{
+											"key": "payment_status",
+											"value": "Paid",
+											"type": "text"
+										},
+										{
+											"key": "payment_type",
+											"value": "online",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clocare_api}}/api/customer/package/subscription/create",
+									"host": [
+										"{{clocare_api}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"package",
+										"subscription",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
